@@ -35,6 +35,9 @@ importers:
       react-dom:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
+      swagger-ui-dist:
+        specifier: ^5.26.2
+        version: 5.26.2
     devDependencies:
       '@ant-design/pro-cli':
         specifier: ^3.3.0
@@ -2307,6 +2310,9 @@ packages:
   '@remix-run/router@1.23.0':
     resolution: {integrity: sha512-O3rHJzAQKamUz1fvE0Qaw0xSFqsA/yafi2iqeE0pvdFtCO1viYx8QL6f3Ln/aCCTLxs68SLf0KPM9eSeM8yBnA==}
     engines: {node: '>=14.0.0'}
+
+  '@scarf/scarf@1.4.0':
+    resolution: {integrity: sha512-xxeapPiUXdZAE3che6f3xogoJPeZgig6omHEy1rIY5WVsB3H2BHNnZH+gHG6x91SCWyQCzWGsuL2Hh3ClO5/qQ==}
 
   '@sigstore/bundle@1.1.0':
     resolution: {integrity: sha512-PFutXEy0SmQxYI4texPw3dd2KewuNqv7OuK1ZFtY2fM754yhvG2KdgwIhRnoEE2uHdtdGNQ8s0lb94dW9sELog==}
@@ -10100,6 +10106,9 @@ packages:
   swagger-ui-dist@4.19.1:
     resolution: {integrity: sha512-n/gFn+R7G/BXWwl5UZLw6F1YgWOlf3zkwGlsPhTMhNtAAolBGKg0JS5b2RKt5NI6/hSopVaSrki2wTIMUDDy2w==}
 
+  swagger-ui-dist@5.26.2:
+    resolution: {integrity: sha512-WmMS9iMlHQejNm/Uw5ZTo4e3M2QMmEavRz7WLWVsq7Mlx4PSHJbY+VCrLsAz9wLxyHVgrJdt7N8+SdQLa52Ykg==}
+
   swagger2openapi@7.0.8:
     resolution: {integrity: sha512-upi/0ZGkYgEcLeGieoz8gT74oWHA0E7JivX7aN9mAf+Tc7BQoRBvnIGHoPDw+f9TXTW4s6kGYCZJtauP6OYp7g==}
     hasBin: true
@@ -14450,6 +14459,8 @@ snapshots:
 
   '@remix-run/router@1.23.0': {}
 
+  '@scarf/scarf@1.4.0': {}
+
   '@sigstore/bundle@1.1.0':
     dependencies:
       '@sigstore/protobuf-specs': 0.2.1
@@ -14751,7 +14762,7 @@ snapshots:
 
   '@types/history@5.0.0':
     dependencies:
-      history: 4.10.1
+      history: 5.3.0
 
   '@types/hoist-non-react-statics@3.3.6':
     dependencies:
@@ -14854,7 +14865,7 @@ snapshots:
       '@types/history': 4.7.11
       '@types/react': 19.1.8
       '@types/react-router': 5.1.20
-      redux: 3.7.2
+      redux: 4.2.1
 
   '@types/react-router@5.1.20':
     dependencies:
@@ -24650,6 +24661,10 @@ snapshots:
       stable: 0.1.8
 
   swagger-ui-dist@4.19.1: {}
+
+  swagger-ui-dist@5.26.2:
+    dependencies:
+      '@scarf/scarf': 1.4.0
 
   swagger2openapi@7.0.8(encoding@0.1.13):
     dependencies:

@@ -160,7 +160,7 @@ export default [
   {
     path: '/result',
     name: 'result',
-    icon: 'check-circle',
+    icon: 'checkCircle',
     routes: [
       {
         path: '/result',

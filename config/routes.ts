@@ -29,6 +29,183 @@ export default [
     component: './Welcome',
   },
   {
+    path: '/dashboard',
+    name: 'dashboard',
+    icon: 'dashboard',
+    routes: [
+      {
+        path: '/dashboard',
+        redirect: '/dashboard/analysis',
+      },
+      {
+        path: '/dashboard/analysis',
+        name: 'analysis',
+        component: './dashboard/analysis',
+      },
+      {
+        path: '/dashboard/monitor',
+        name: 'monitor',
+        component: './dashboard/monitor',
+      },
+      {
+        path: '/dashboard/workplace',
+        name: 'workplace',
+        component: './dashboard/workplace',
+      },
+    ],
+  },
+  {
+    path: '/form',
+    name: 'form',
+    icon: 'form',
+    routes: [
+      {
+        path: '/form',
+        redirect: '/form/basic-form',
+      },
+      {
+        path: '/form/basic-form',
+        name: 'basic-form',
+        component: './form/basic-form',
+      },
+      {
+        path: '/form/step-form',
+        name: 'step-form',
+        component: './form/step-form',
+      },
+      {
+        path: '/form/advanced-form',
+        name: 'advanced-form',
+        component: './form/advanced-form',
+      },
+    ],
+  },
+  {
+    path: '/list',
+    name: 'list',
+    icon: 'table',
+    routes: [
+      {
+        path: '/list',
+        redirect: '/list/table-list',
+      },
+      {
+        path: '/list/table-list',
+        name: 'table-list',
+        component: './table-list',
+      },
+      {
+        path: '/list/search-list',
+        name: 'search-list',
+        component: './list/search-list',
+      },
+      {
+        path: '/list/query-table',
+        name: 'query-table',
+        component: './list/query-table',
+      },
+      {
+        path: '/list/standard-list',
+        name: 'standard-list',
+        component: './list/standard-list',
+      },
+      {
+        path: '/list/card-list',
+        name: 'card-list',
+        component: './list/card-list',
+      },
+    ],
+  },
+  {
+    path: '/profile',
+    name: 'profile',
+    icon: 'profile',
+    routes: [
+      {
+        path: '/profile',
+        redirect: '/profile/basic',
+      },
+      {
+        path: '/profile/basic',
+        name: 'basic',
+        component: './profile/basic',
+      },
+      {
+        path: '/profile/advanced',
+        name: 'advanced',
+        component: './profile/advanced',
+      },
+    ],
+  },
+  {
+    path: '/result',
+    name: 'result',
+    icon: 'check-circle',
+    routes: [
+      {
+        path: '/result',
+        redirect: '/result/success',
+      },
+      {
+        path: '/result/success',
+        name: 'success',
+        component: './result/success',
+      },
+      {
+        path: '/result/fail',
+        name: 'fail',
+        component: './result/fail',
+      },
+    ],
+  },
+  {
+    path: '/exception',
+    name: 'exception',
+    icon: 'warning',
+    routes: [
+      {
+        path: '/exception',
+        redirect: '/exception/403',
+      },
+      {
+        path: '/exception/403',
+        name: '403',
+        component: './exception/403',
+      },
+      {
+        path: '/exception/404',
+        name: '404',
+        component: './exception/404',
+      },
+      {
+        path: '/exception/500',
+        name: '500',
+        component: './exception/500',
+      },
+    ],
+  },
+  {
+    path: '/account',
+    name: 'account',
+    icon: 'user',
+    routes: [
+      {
+        path: '/account',
+        redirect: '/account/center',
+      },
+      {
+        path: '/account/center',
+        name: 'center',
+        component: './account/center',
+      },
+      {
+        path: '/account/settings',
+        name: 'settings',
+        component: './account/settings',
+      },
+    ],
+  },
+  {
     path: '/admin',
     name: 'admin',
     icon: 'crown',
@@ -44,12 +221,6 @@ export default [
         component: './Admin',
       },
     ],
-  },
-  {
-    name: 'list.table-list',
-    icon: 'table',
-    path: '/list',
-    component: './table-list',
   },
   {
     path: '/',

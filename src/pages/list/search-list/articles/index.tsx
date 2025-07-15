@@ -13,43 +13,43 @@ const SearchList: React.FC = () => {
   const mockData = [
     {
       id: 1,
-      title: 'Ant Design Pro',
-      description: '基于 Ant Design 和 umi 的企业级前端应用框架',
+      title: 'React Hooks 最佳实践指南',
+      description:
+        '深入探讨 React Hooks 的使用技巧和最佳实践，包含性能优化和常见陷阱',
       avatar: 'https://avatars.githubusercontent.com/u/12101536?v=4',
-      owner: 'antd',
-      tags: ['React', 'TypeScript', 'Ant Design'],
-      stars: 36000,
+      owner: '张三',
+      tags: ['React', 'Hooks', '前端开发'],
+      readCount: 5200,
       createTime: '2024-01-15',
     },
     {
       id: 2,
-      title: 'Vue Element Admin',
-      description: '基于 Vue.js 和 Element UI 的后台管理系统',
+      title: 'TypeScript 类型体操进阶',
+      description: '从基础到高级的 TypeScript 类型操作，让你的代码更加健壮',
       avatar: 'https://avatars.githubusercontent.com/u/499550?v=4',
-      owner: 'panjiachen',
-      tags: ['Vue', 'Element UI', 'JavaScript'],
-      stars: 87000,
+      owner: '李四',
+      tags: ['TypeScript', '类型系统', '进阶'],
+      readCount: 8700,
       createTime: '2024-01-10',
     },
     {
       id: 3,
-      title: 'React Admin',
-      description: 'A frontend Framework for building B2B applications',
+      title: 'Vue 3 组合式 API 实战',
+      description: '通过实际项目案例学习 Vue 3 Composition API 的强大功能',
       avatar: 'https://avatars.githubusercontent.com/u/15723521?v=4',
-      owner: 'marmelab',
-      tags: ['React', 'Material-UI', 'Admin'],
-      stars: 24000,
+      owner: '王五',
+      tags: ['Vue', 'Composition API', '实战'],
+      readCount: 3400,
       createTime: '2024-01-08',
     },
     {
       id: 4,
-      title: 'Ng Alain',
-      description:
-        'ng-alain is a production-ready solution for admin interfaces',
+      title: '前端性能优化实战指南',
+      description: '从代码层面到工程化的全方位前端性能优化方案',
       avatar: 'https://avatars.githubusercontent.com/u/2405163?v=4',
-      owner: 'ng-alain',
-      tags: ['Angular', 'Ng-Zorro', 'TypeScript'],
-      stars: 4600,
+      owner: '赵六',
+      tags: ['性能优化', '工程化', '最佳实践'],
+      readCount: 6800,
       createTime: '2024-01-05',
     },
   ];
@@ -84,7 +84,7 @@ const SearchList: React.FC = () => {
 
   return (
     <PageContainer>
-      <Card title="搜索列表" bordered={false}>
+      <Card title="搜索列表（文章）" bordered={false}>
         <Row gutter={16} style={{ marginBottom: 24 }}>
           <Col span={8}>
             <Input
@@ -104,8 +104,8 @@ const SearchList: React.FC = () => {
               <Option value="all">全部分类</Option>
               <Option value="react">React</Option>
               <Option value="vue">Vue</Option>
-              <Option value="angular">Angular</Option>
               <Option value="typescript">TypeScript</Option>
+              <Option value="性能优化">性能优化</Option>
             </Select>
           </Col>
           <Col span={4}>
@@ -135,8 +135,8 @@ const SearchList: React.FC = () => {
             <List.Item
               key={item.id}
               actions={[
-                <span key="star">⭐ {item.stars}</span>,
-                <span key="time">创建时间: {item.createTime}</span>,
+                <span key="read">📖 阅读量: {item.readCount}</span>,
+                <span key="time">发布时间: {item.createTime}</span>,
               ]}
               extra={
                 <img

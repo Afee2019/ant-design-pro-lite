@@ -97,7 +97,27 @@ export default [
       {
         path: '/list/search-list',
         name: 'search-list',
-        component: './list/search-list',
+        routes: [
+          {
+            path: '/list/search-list',
+            redirect: '/list/search-list/articles',
+          },
+          {
+            path: '/list/search-list/articles',
+            name: 'search-articles',
+            component: './list/search-list/articles',
+          },
+          {
+            path: '/list/search-list/projects',
+            name: 'search-projects',
+            component: './list/search-list/projects',
+          },
+          {
+            path: '/list/search-list/applications',
+            name: 'search-applications',
+            component: './list/search-list/applications',
+          },
+        ],
       },
       {
         path: '/list/query-table',
